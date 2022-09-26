@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block content %}
+<br/>
+<h1> About Us</h1>
+<hr/>
+{% load static %}
+<div class = 'container' style = 'padding-left:340px;'>
+<img src ='{% static "teamlogo.png" %}' height=130 width=380>
+</div>
+<br/>
+<p><h3> We are the students who help our User's knowledge thirst by making their way easier. We are a set of Students studying 12th Grade. This Website was built for our project purposes through Django and other supporting language. Hope this website served its purpose for our Students.
+  Thank You for using our MathsFun site. Any issues feel free to report it through the Customer Support. Only for issues not for suggestions.
+  For Customer Support click the "Email Us" button below .</h3></p>
+<h4>Done By:</h4>
+<p><h5>Sanjay Raj<br>
+    Gouri Shankar<br>
+    Manoj<br>
+    Karthick<br>
+</h5></p>
+<a href="{% url 'home-page' %}" class = 'btn btn-success'>Back</a>
+<a href = 'mailto:teamjarvisksmg@gmail.com' class = 'btn btn-primary'>Email Us</a>
+
+{% endblock %}
